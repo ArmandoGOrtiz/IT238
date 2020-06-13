@@ -1,0 +1,85 @@
+<!--Armando Ortiz history quiz-->
+<!--1.Who won the American civil war , 2. What year did the U.S enter world war II , 3. Which of the following countries were U.S allies in WW II , 
+4. What country was the U.S adversary in the cold war , 5. Which of the following are major colonies in the continental U.S pre 1700-->
+<html>
+  <head>
+  <title>United States History Quiz!</title>
+
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="history.js">
+  </script>
+  </head>
+
+<style>
+.note {
+  width: 150px;
+  background-color: white;
+  border: solid black 1px;
+  padding: 5px;
+}
+</style>
+
+  <body background = "http://standardflags.com/shop/wp-content/uploads/2013/01/Nylon-American-Flag-closeup-1.jpg">
+    <h1><font color="white">United States History Quiz!</font></h1>
+
+    <p>
+    <strong><font color="#bfbfbf">Who won the civil war?  <span class="icon">Hint<span class="note">Not the south</span></span></font></strong><br />
+    <input type="radio" name="civilWar" id="blueNorth" /><label for="blueNorth"><font color="#bfbfbf">The North</font></label><br /> <!--Label allows for blue button when name clicked-->
+    <input type="radio" name="civilWar" id="redSouth" /><label for="redSouth"><font color="#bfbfbf">The South</font></label><br />
+    </p>
+
+    <p>
+    <strong><font color="#bfbfbf">Which year did the U.S enter World War II?  <span class="icon">Hint<span class="note">Not 1943</span></span></font></strong><br />
+    <input type="radio" name="warTwo" id="yearOne" /><label for="eventOne"><font color="#bfbfbf">1940</font></label><br /> 
+    <input type="radio" name="warTwo" id="yearTwo" /><label for="eventTwo"><font color="#bfbfbf">1941</font></label><br />
+    <input type="radio" name="warTwo" id="yearThree" /><label for="eventThree"><font color="#bfbfbf">1942</font></label><br />
+    <input type="radio" name="warTwo" id="yearFour" /><label for="eventFour"><font color="#bfbfbf">1943</font></label><br />
+    </p>
+
+      <p>
+    <strong><font color="#bfbfbf">Which of the following countries were U.S allies in World War II?  <span class="icon">Hint<span class="note">Spain is Neutral in the war</span></span></font></strong><br />
+    <input type="checkbox" name="ally" id="sovietItem" />
+      <font color="#bfbfbf">The Soviet Union</font><br />
+    <input type="checkbox" name="ally" id="ukItem"  />
+      <font color="#bfbfbf">The United Kingdom</font><br />
+    <input type="checkbox" name="ally" id="spainItem"  />
+      <font color="#bfbfbf">Spain</font><br />
+    <input type="checkbox" name="ally" id="australiaItem"  />
+      <font color="#bfbfbf">Australia</font><br />
+    </p>
+
+    <p>
+    <strong><font color="#bfbfbf">What country was the U.S main adversary in the cold war?  <span class="icon">Hint<span class="note">Not China or Cuba</span></span></font></strong><br />
+    <input type="radio" name="coldWar" id="adversaryOne" /><label for="countryOne"><font color="#bfbfbf">The Soviet Union</font></label><br /> 
+    <input type="radio" name="coldWar" id="adversaryTwo" /><label for="countryTwo"><font color="#bfbfbf">Cuba</font></label><br />
+    <input type="radio" name="coldWar" id="adversaryThree" /><label for="countryThree"><font color="#bfbfbf">China</font></label><br />
+    <input type="radio" name="coldWar" id="adversaryFour" /><label for="countryFour"><font color="#bfbfbf">Vietnam</font></label><br />
+    </p>
+    
+    <p>
+    <strong><font color="#bfbfbf">Which of the following are major colonies in the continental U.S pre 1700?  <span class="icon">Hint<span class="note">Not Los Angeles</span></span></font></strong><br />
+    <input type="checkbox" name="colonies" id="jamestownItem" />
+      <font color="#bfbfbf">Jamestown</font><br />
+    <input type="checkbox" name="colonies" id="roanoketeItem"  />
+      <font color="#bfbfbf">Roanoke</font><br />
+    <input type="checkbox" name="colonies" id="newnetherlandsItem"  />
+      <font color="#bfbfbf">New Netherlands</font><br />
+    <input type="checkbox" name="colonies" id="losAngelesItem"  />
+      <font color="#bfbfbf">Los Angeles</font>
+    </p>
+    
+    <p>
+    <input type="button" value="Show Results" id="checkButton" />
+    </p>
+    
+    <p>
+    <strong><font color="#bfbfbf">Results</font></strong><br />
+    <textarea id="results" value="" rows=4 cols=40 wrap="virtual">
+    </textarea>
+    </p>
+
+  </body>
+</html>

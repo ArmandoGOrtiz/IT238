@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Simple Tip Calculator Page</title>
+    <meta charset="utf-8">
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"> //inserts Jquery library
+</script>
+
+<script src="calc.js"></script>
+
+<style> div {padding: 15px}</style>
+
+<body>
+    <h1 id="mainHeader"> Tip Calculator </h1>
+    
+    <div>
+        <label for="checkField"> Check Amount </label>
+        <input type="text" id="checkField"/> 
+    </div>
+
+    <div>
+        <label for="serviceSelect">Service Level</label>
+        <select id="serviceSelect">
+            <option>Good</option>
+            <option>Fair</option>
+            <option>Poor</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="button" value="Calculate Tip" id="calcButton"/>
+    </div>
+    <div id="tipArea"></div>
+</body>
+</html>

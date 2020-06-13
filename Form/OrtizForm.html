@@ -1,0 +1,85 @@
+<html>
+<!--Armando Ortiz form assignment-->
+<head>
+<meta charset="UTF-8">
+<title>Depaul University Visit</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<script src="form.js"></script>
+
+</head>
+
+<style>
+.note {
+  width: 150px;
+  background-color: white;
+  border: solid black 1px;
+  padding: 5px;
+}
+</style>
+
+<body>
+
+  <h1>Depaul University Visit</h1>
+
+  <form action="http://facsrv.cdm.depaul.edu/~cmiller/php/respond.php" 
+        method="post">
+
+    <p id="uPanel">
+      <label for="user">Name:</label> 
+      <input type="text" name="uname" id="user" />
+    </p>
+
+    <p id="timeSelection">I will got to the: 
+      <select name="time">
+        <option value="morning">8:30 am - 11:30 am </option>
+        <option value="afternoon">12:00 pm - 3:00 pm</option>
+        <option value="evening">3:30 pm - 6:30 pm</option>
+      </select>
+    </p>
+
+    <p id="dateSelection">on Saturday: 
+      <select name="date">
+        <option value="June 8th">June 8th </option>
+        <option value="June 15th">June 15th</option>
+        <option value="June 22nd">June 22nd</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="radio" name="guest" id="guestYes" value="yes" />
+      <label for="attend">I plan to have a guest</label><br />
+
+      <input type="radio" name="guest" id="guestNo" value="no" />
+      <label for="notattend">I do not plan to have a guest</label><br />
+    </p>
+
+    <p>
+      <input type="radio" name="major" id="majorYes" value="yes" />
+      <label for="attend">I have a major in mind <span class="icon"><b>Clarification</b><span class="note">You do not need a specific major in mind just a field you are interested in</span></span></label><br />
+
+      <input type="radio" name="major" id="majorNo" value="no" />
+      <label for="notattend">I do not have a major in mind</label><br />
+    </p>
+
+    <p id="majorSelection">I am interested in majoring in: 
+      <select name="majors">
+        <option value="Business, Management, Marketing, and Related Support Services">Business, Management, Marketing, and Related Support Services </option>
+        <option value="Communication, Journalism, and Related Programs">Communication, Journalism, and Related Programs</option>
+        <option value="Liberal Arts and Sciences, General Studies and Humanities">Liberal Arts and Sciences, General Studies and Humanities</option>
+        <option value="Computer Science, Information Technology , Information Systems">Computer Science, Information Technology , Information Systems</option>
+      </select>
+    </p>
+
+    <p>
+      <input type="submit" />
+    </p>
+
+  </form>
+
+</body>
+</html>

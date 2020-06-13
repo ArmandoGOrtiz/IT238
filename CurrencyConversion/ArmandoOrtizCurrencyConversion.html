@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>USD to Euro,Pound,Yen,Yuan</title>
+<meta charset="utf-8">
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+  crossorigin="anonymous"> // Armando Oritz Currency converter of USD to top 4 global currencys  
+</script>
+ 
+<script src="ArmandoOrtizCurrencyConversion.js"></script>
+
+<style> div {padding: 15px}</style>
+<body bgcolor = "#e0e0eb">
+
+   <h1 id="mainHeader"> Currency Converter </h1>
+    
+    <div>
+        <label for="usdField"> USD Amount </label>
+        <input type="text" id="usdField"/> 
+    </div>
+
+    <div>
+        <label for="desiredCurrency">Desired Currency to Convert to</label>
+        <select id="desiredCurrency">
+            <option>Euro</option>
+            <option>Pound</option>
+            <option>Yen</option>
+            <option>Yuan</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="button" value="Convert Currency" id="convertButton"/>
+    </div>
+    <div id="currencyArea"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--Armando Ortiz Dice HTML Code-->
+<html>
+<head>
+<title>Roll the Dice</title>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="dice.js"></script>
+<script src='ui.js'></script>
+</head>
+
+<style> div {padding: 10px}</style>
+<body bgcolor = "#008000">
+<h1 style="color:#ffbf00;">The Dice Game!</h1>
+    
+<div id="result" style="color:#ffbf00;">Results of Rolled Dice</div>
+<div id="diceRoll"></div>
+<div>
+  <input id="6Button" type="button" value="6 Sided Dice" /> 
+  <input id="8Button" type="button" value="8 Sided Dice" /> 
+</div>
+
+<div>
+  <input id="2setButton" type="button" value="2 Sets of Dice Thrown" />
+  <input id="4setButton" type="button" value="4 Sets of Dice Thrown" /> 
+</div>
+
+<div>
+<input id="rollButton" type="button" value="Roll Dice" />
+</div>
+
+<div>
+<input id="resetButton" type="button" value="Reset Roll History" />
+</div>
+<div id="historyArea"></div>
+<div id="averageArea"></div>
+</body>
+</html>
