@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Order and Pick Up</title>
+</head>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin="anonymous"></script>
+<script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="Ortizfinalform.js"></script>
+
+<body bgcolor="#ffa64d">
+<h1 style="text-align:center;font-family:Comic Sans MS;">Avoid Lines Order Online</h1>
+<section>
+  <nav style ="margin: 10px; border: 1px solid black; text-align:center; font-size:130%;">
+    <ul>
+      <a href="OrtizFinal-about.html">About</a>
+      <a href="OrtizFinal-locations.html">Locations</a>
+      <a href="OrtizFinal.html">Homepage</a>
+    </ul>
+  </nav>
+</section>
+<form action="http://facsrv.cdm.depaul.edu/~cmiller/php/respond.php" method="post">
+<p id="uPanel">
+  <label for="user">Name:</label> 
+  <input type="text" name="uname" id="user" />
+</p>
+
+<p>I will get a meal combo *with drink 5.50$ , without drink 5.00$</br>Note if tacos are selected, three tacos are given*:</br>
+  <input type="radio" name="meal" id="meal1" value="Burrito"/>
+  <label for="Burrito">Burrito</label><br />
+
+  <input type="radio" name="meal" id="meal2" value="Tacos"/>
+  <label for="Tacos">Tacos</label><br />
+
+  <input type="radio" name="meal" id="meal3" value="Torta"/>
+  <label for="Torta">Torta</label><br />
+</p>
+<p id="meatSelection">Choose your meat: 
+  <select name="meat">
+    <option value="Chicken">Chicken </option>
+    <option value="Fish">Fish</option>
+    <option value="Pork">Pork</option>
+    <option value="Steak">Steak</option>
+  </select>
+</p>
+<p id="sideSelection">My side will be: 
+  <select name="side">
+    <option value="Rice">Rice </option>
+    <option value="Beans">Beans</option>
+    <option value="RiceBeans">Rice and Beans</option>
+  </select>
+</p>
+<p>Will you get a drink?</br>
+  <input type="radio" name="drinkQ" id="drinkY" value="yes" />
+  <label for="yes">yes</label><br />
+
+  <input type="radio" name="drinkQ" id="drinkN" value="no"/>
+  <label for="no">No</label><br />
+</p>
+<p id="softDrink">Soft Drink?</br>
+  <input type="radio" name="softQ" id="softY" value="yes" />
+  <label for="yes">yes</label><br />
+
+  <input type="radio" name="softQ" id="softN" value="no"/>
+  <label for="no">No</label><br />
+</p>
+<p id="softSelection">My soft drink will be: 
+  <select name="soft" id="softs">
+    <option value="coke">Coke</option>
+    <option value="pepsi">Pepsi</option>
+    <option value="rccola">RC Cola</option>
+    <option value="sprite">Sprite</option>
+  </select>
+</p>
+<p id="drinkSelection">My drink will be: 
+  <select name="drink" id="drinks">
+    <option value="Horchata">Horchata </option>
+    <option value="Hotchocolate">Hot Chocolate</option>
+    <option value="Mangonada">Mangonada</option>
+    <option value="Tejuino">Tejuino</option>
+  </select>
+</p>
+<p>Click when done, if your order results show your order has been taken and you may close the tab.</br><input type="submit" /></p>
+</form>
+</body>
+</html>
