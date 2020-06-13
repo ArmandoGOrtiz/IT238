@@ -1,0 +1,52 @@
+<html>
+<!--Armando Ortiz Assignment 4 HTML Code-->
+<head>
+<meta charset="UTF-8">
+<title>Game Board</title>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="game.js"></script>
+
+</head>
+
+<style> div {padding: 10px}</style>
+
+<body background = "https://upload.wikimedia.org/wikipedia/commons/3/34/Rub_al_Khali_002.JPG">
+
+<h1>Archaeology Board</h1>
+
+<table id="board">
+
+</table>
+
+<p>
+  <label for="tileField"> Tile Location </label>
+  <input type="text" id="tileField"/> 
+</p>
+
+<p>
+  <input type="button" value="Dig!" id="digButton"/>
+</p>
+
+<h3 id = "totalAttempts">
+
+</h3>
+
+<h3 id = "totalSuccess">
+
+</h3>
+
+<h3 id="totalRuins">
+
+</h3>
+
+<h2 id="results">
+
+</h2>
+
+</body>
+</html>
